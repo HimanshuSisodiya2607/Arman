@@ -1,35 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-
     <title>VocalFluxStudio | Secure Dubbing & Voiceover Platform</title>
     <meta name="description" content="VocalFluxStudio is a secure, no-contact voice dubbing marketplace. Voice. Secure. Delivered. No calls. No leaks. Just perfect dubs." />
-
-    <meta property="og:title" content="VocalFluxStudio | Secure Dubbing Platform" />
-    <meta property="og:description" content="Secure, no-contact voice dubbing marketplace. End-to-End Encrypted. Verified Studios." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="opengraph.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@VocalFluxStudio" />
-    <meta name="twitter:title" content="VocalFluxStudio" />
-    <meta name="twitter:description" content="Voice. Secure. Delivered. The professional platform for voiceovers and dubbing." />
-    <meta name="twitter:image" content="opengraph.jpg" />
-
     <link rel="icon" type="image/png" href="favicon.png" />
-    
-    <!-- Ultra-Robust Font Loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    </noscript>
-    <script type="module" crossorigin src="index-DhjGQhTn.js"></script>
-    <link rel="stylesheet" crossorigin href="index-BLpfRZgO.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="/" class="logo">
+                    <div class="logo-icon">
+                        <img src="favicon.png" alt="VocalFluxStudio">
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">VOCAL<span class="logo-accent">FLUX</span></span>
+                        <span class="logo-sub">Studio</span>
+                    </div>
+                </a>
+                <div class="nav-links">
+                    <a href="#how-it-works">Production</a>
+                    <a href="#features">Security</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="/auth" class="btn-ghost">Login</a>
+                    <a href="/auth" class="btn-primary">Launch</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="#how-it-works" class="mobile-link">Production</a>
+                <a href="#features" class="mobile-link">Security</a>
+                <a href="/auth" class="btn-outline-mobile">Login</a>
+                <a href="/auth" class="btn-primary-mobile">Launch Project</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">Next-Gen Production Standard</div>
+                    <h1>Voice.<br><span class="accent">Secure.</span><br>Delivered.</h1>
+                    <p>The elite platform for zero-contact, military-grade encrypted voice production. Where privacy meets perfection.</p>
+                    <div class="hero-actions">
+                        <a href="/auth" class="btn-primary-large">Launch Project</a>
+                        <a href="#features" class="btn-outline-large">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="hero.png" alt="VocalFluxStudio Platform">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-by">
+        <div class="container">
+            <p class="section-label">Trusted by the biggest industries</p>
+            <div class="brands">
+                <span>NETFLIX</span>
+                <span>HBO</span>
+                <span>PARAMOUNT</span>
+                <span>SONY</span>
+                <span>DISNEY</span>
+                <span>AMAZON</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="how-cards">
+                <article class="how-card">
+                    <div class="how-icon globe">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M2 12h20" />
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z" />
+                        </svg>
+                    </div>
+                    <p class="how-kicker">Upload & Direct</p>
+                    <h3>Clients</h3>
+                    <ul class="how-list">
+                        <li>Encrypted Video Uploads</li>
+                        <li>AI Voice Casting</li>
+                        <li>Real-time QC Access</li>
+                        <li>Secure Final Mastering</li>
+                    </ul>
+                </article>
+                <article class="how-card featured">
+                    <div class="how-icon mic">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="9" y="2" width="6" height="12" rx="3" />
+                            <path d="M5 10v2a7 7 0 0 0 14 0v-2" />
+                            <path d="M12 19v3" />
+                        </svg>
+                    </div>
+                    <p class="how-kicker">Anonymized Talent</p>
+                    <h3>Artists</h3>
+                    <ul class="how-list">
+                        <li>Segmented Scripting</li>
+                        <li>Home/Studio Recording</li>
+                        <li>Identity Shielding</li>
+                        <li>Instant Verified Payouts</li>
+                    </ul>
+                </article>
+                <article class="how-card">
+                    <div class="how-icon headset">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 12a8 8 0 0 1 16 0v3a2 2 0 0 1-2 2h-2v-6h4" />
+                            <path d="M4 12v3a2 2 0 0 0 2 2h2v-6H4" />
+                            <path d="M9 18v1a3 3 0 0 0 6 0v-1" />
+                        </svg>
+                    </div>
+                    <p class="how-kicker">Verified Nodes</p>
+                    <h3>Studios</h3>
+                    <ul class="how-list">
+                        <li>Calibration Checks</li>
+                        <li>Artist Logistics</li>
+                        <li>Platform Calendar</li>
+                        <li>Fixed-Node Payouts</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Features Section -->
+    <section id="features" class="security-features">
+        <div class="container">
+            <div class="security-layout">
+                <div class="security-left">
+                    <div class="security-grid">
+                        <article class="security-item">
+                            <div class="security-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="5" y="11" width="14" height="10" rx="2" />
+                                    <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+                                    <path d="M12 15v2" />
+                                </svg>
+                            </div>
+                            <div class="security-title">AES-256</div>
+                            <div class="security-desc">Military grade</div>
+                        </article>
+                        <article class="security-item">
+                            <div class="security-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" />
+                                </svg>
+                            </div>
+                            <div class="security-title">Watermark</div>
+                            <div class="security-desc">Leak tracking</div>
+                        </article>
+                        <article class="security-item">
+                            <div class="security-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 3 5 6v6c0 5 3.5 8 7 9 3.5-1 7-4 7-9V6l-7-3Z" />
+                                    <path d="M9 12.5 11 14l4-4" />
+                                </svg>
+                            </div>
+                            <div class="security-title">NDA Core</div>
+                            <div class="security-desc">Legal shield</div>
+                        </article>
+                        <article class="security-item">
+                            <div class="security-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 14c2.5-3 5.5-3 8 0s5.5 3 8 0" />
+                                    <path d="M4 10c2.5-3 5.5-3 8 0s5.5 3 8 0" opacity="0.65" />
+                                    <path d="M4 18c2.5-3 5.5-3 8 0s5.5 3 8 0" opacity="0.45" />
+                                </svg>
+                            </div>
+                            <div class="security-title">Flux Protocol</div>
+                            <div class="security-desc">Pure digital</div>
+                        </article>
+                    </div>
+                </div>
+                <div class="security-right">
+                    <div class="security-heading">
+                        <h2>Security is not a feature.<br><span class="accent">It's our baseline.</span></h2>
+                        <p>Every byte of audio data that passes through VocalFlux is segmented, encrypted, and watermarked using our proprietary Flux Protocol. We've eliminated the human vulnerability.</p>
+                    </div>
+                    <ul class="security-points">
+                        <li><span class="point-dot"></span>Zero-Contact Interaction Model</li>
+                        <li><span class="point-dot"></span>Invisible Ultrasonic Audio Watermarking</li>
+                        <li><span class="point-dot"></span>Automated Intellectual Property Purging</li>
+                        <li><span class="point-dot"></span>Decentralized Studio Authentication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flux Station Dashboard Section -->
+    <section class="flux-station-section">
+        <div class="container">
+            <div class="flux-station-card">
+                <div class="flux-station-header">
+                    <div class="window-controls">
+                        <span class="window-dot red"></span>
+                        <span class="window-dot yellow"></span>
+                        <span class="window-dot green"></span>
+                    </div>
+                    <div class="flux-station-title">FLUX_STATION_ALPHA.SYSTEM</div>
+                </div>
+                <div class="flux-station-content">
+                    <div class="flux-station-sidebar">
+                        <div class="flux-station-info">
+                            <h3>Flux Station</h3>
+                            <p>Real-time production dashboard</p>
+                        </div>
+                        <div class="flux-station-stats">
+                            <div class="flux-stat-item">
+                                <div class="flux-stat-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M2 12h20" />
+                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z" />
+                                    </svg>
+                                </div>
+                                <div class="flux-stat-details">
+                                    <div class="flux-stat-label">Network Activity</div>
+                                    <div class="flux-stat-value">99.9% Uptime</div>
+                                </div>
+                            </div>
+                            <div class="flux-stat-item">
+                                <div class="flux-stat-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="5" y="11" width="14" height="10" rx="2" />
+                                        <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+                                    </svg>
+                                </div>
+                                <div class="flux-stat-details">
+                                    <div class="flux-stat-label">Encryption Node</div>
+                                    <div class="flux-stat-value">AES_256_GCM</div>
+                                </div>
+                            </div>
+                            <div class="flux-stat-item">
+                                <div class="flux-stat-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 18c2.5-3 5.5-3 8 0s5.5 3 8 0" />
+                                        <path d="M4 10c2.5-3 5.5-3 8 0s5.5 3 8 0" opacity="0.65" />
+                                        <path d="M4 6c2.5-3 5.5-3 8 0s5.5 3 8 0" opacity="0.4" />
+                                    </svg>
+                                </div>
+                                <div class="flux-stat-details">
+                                    <div class="flux-stat-label">Latency Score</div>
+                                    <div class="flux-stat-value">12ms GLOBAL</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flux-station-main">
+                        <div class="flux-station-panel">
+                            <div class="flux-panel-header">
+                                <div>
+                                    <div class="flux-panel-label">Active Stream</div>
+                                    <div class="flux-panel-title">PROJECT_NEON_VOID_V2</div>
+                                </div>
+                                <div class="flux-panel-actions">
+                                    <div class="flux-action-btn">⏸</div>
+                                    <div class="flux-action-btn primary">▶</div>
+                                </div>
+                            </div>
+                            <div class="flux-audio-visualizer">
+                                <div class="audio-bars" id="audioBars"></div>
+                            </div>
+                            <div class="flux-panel-stats">
+                                <div class="flux-panel-stat">
+                                    <div class="flux-panel-stat-label">Segment</div>
+                                    <div class="flux-panel-stat-value">A-042</div>
+                                </div>
+                                <div class="flux-panel-stat">
+                                    <div class="flux-panel-stat-label">QC Score</div>
+                                    <div class="flux-panel-stat-value">9.8/10</div>
+                                </div>
+                                <div class="flux-panel-stat">
+                                    <div class="flux-panel-stat-label">Status</div>
+                                    <div class="flux-panel-stat-value">ENCRYPTING</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Elevate your<br><span class="accent italic">Production.</span></h2>
+            <p>Join the world's most secure voiceover ecosystem.</p>
+            <div class="cta-actions">
+                <a href="/auth" class="btn-primary-large">Get Started Now</a>
+                <a href="#contact" class="btn-outline-large">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="/" class="footer-logo">
+                        <img src="favicon.png" alt="VocalFluxStudio" style="width: 40px; height: 40px; border-radius: 8px;">
+                        <span>VocalFlux<span class="accent">Studio</span></span>
+                    </a>
+                    <p>The world's first fully secure, no-contact dubbing & voiceover production platform. Voice. Secure. Delivered.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/vocalflux_studio" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#features">Browse Voices</a></li>
+                        <li><a href="#enterprise">Enterprise</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:vocalfluxstudio@gmail.com">vocalfluxstudio@gmail.com</a></li>
+                        <li><a href="#help">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#nda">NDA Policy</a></li>
+                        <li><a href="#guidelines">Content Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 VocalFluxStudio Inc. All rights reserved.</p>
+                <p>Secured with AES-256 Encryption</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
