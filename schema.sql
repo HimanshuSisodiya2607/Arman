@@ -25,14 +25,18 @@ CREATE TABLE IF NOT EXISTS links (
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Enquiries from client form (name, email, message)
+-- Enquiries from client form (name, email, phone, message)
 CREATE TABLE IF NOT EXISTS enquiries (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
+    phone VARCHAR(32) DEFAULT NULL,
     message TEXT NOT NULL,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- If you already have enquiries without phone, run:
+-- ALTER TABLE enquiries ADD COLUMN phone VARCHAR(32) DEFAULT NULL AFTER email;
 
 -- Default admin: admin@vocalflux.studio / Admin@123 (plain text)
 INSERT INTO admins (email, password) VALUES

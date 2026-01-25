@@ -48,9 +48,11 @@ $base           = ($is_admin || $is_login_page) ? '../' : '';
                 <div class="nav-links">
                     <a href="index.html">Home</a>
                     <a href="index.php">Links</a>
+                    <a href="admin/login.php">Admin</a>
                 </div>
                 <div class="nav-actions">
                     <a href="auth.html" class="btn-ghost">Login</a>
+                    <a href="admin/login.php" class="btn-ghost">Admin</a>
                     <a href="index.php#enquiry" class="btn-primary">Enquiry</a>
                 </div>
                 <?php endif; ?>
@@ -77,6 +79,7 @@ $base           = ($is_admin || $is_login_page) ? '../' : '';
             <div class="mobile-menu-content">
                 <a href="index.html" class="mobile-link">Home</a>
                 <a href="index.php" class="mobile-link">Links</a>
+                <a href="admin/login.php" class="mobile-link">Admin</a>
                 <a href="auth.html" class="btn-outline-mobile">Login</a>
                 <a href="index.php#enquiry" class="btn-primary-mobile">Enquiry</a>
             </div>

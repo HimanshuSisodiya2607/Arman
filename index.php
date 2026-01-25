@@ -89,7 +89,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="container">
             <div class="badge">Contact</div>
             <h2 style="font-size: 44px; font-weight: 900; font-family: 'Space Grotesk', sans-serif; margin-top: 12px; margin-bottom: 16px;">Enquiry</h2>
-            <p style="color: var(--white-50); font-size: 18px; margin-bottom: 48px;">Name, email, and message.</p>
+            <p style="color: var(--white-50); font-size: 18px; margin-bottom: 48px;">Name, email, phone, and message.</p>
 
             <div class="auth-card" style="max-width: 560px;">
                 <div id="enquiry-message" style="display:none; margin-bottom: 24px; padding: 16px; border-radius: 12px;"></div>
@@ -101,6 +101,10 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="form-group">
                         <label for="enquiry-email" class="form-label">Email</label>
                         <input type="email" id="enquiry-email" name="email" class="form-input" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="enquiry-phone" class="form-label">Phone</label>
+                        <input type="tel" id="enquiry-phone" name="phone" class="form-input" placeholder="+1 234 567 8900">
                     </div>
                     <div class="form-group">
                         <label for="enquiry-message-field" class="form-label">Message</label>

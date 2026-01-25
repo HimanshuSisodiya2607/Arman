@@ -15,6 +15,7 @@ require_once __DIR__ . '/includes/db.php';
 
 $name    = trim($_POST['name'] ?? '');
 $email   = trim($_POST['email'] ?? '');
+$phone   = trim($_POST['phone'] ?? '');
 $message = trim($_POST['message'] ?? '');
 
 if (!$name || !$email || !$message) {
@@ -28,8 +29,8 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 try {
-    $stmt = $pdo->prepare('INSERT INTO enquiries (name, email, message) VALUES (?, ?, ?)');
-    $stmt->execute([$name, $email, $message]);
+    $stmt = $pdo->prepare('INSERT INTO enquiries (name, email, phone, message) VALUES (?, ?, ?, ?)');
+    $stmt->execute([$name, $email, $phone ?: null, $message]);
 } catch (PDOException $e) {
     echo json_encode(['ok' => false, 'error' => 'Could not save enquiry. Please try again.']);
     exit;
