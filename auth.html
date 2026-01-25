@@ -332,7 +332,7 @@
                     <p>Sign in to access your secure production dashboard</p>
                 </div>
 
-                <form class="auth-form" id="loginForm">
+                <form method="post" action="action.php" class="auth-form" id="loginForm">
                     <div class="form-group">
                         <label for="email" class="form-label">Email Address</label>
                         <input 
@@ -399,12 +399,5 @@
         </div>
     </div>
 
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Add your login logic here
-            console.log('Login form submitted');
-        });
-    </script>
 </body>
 </html>

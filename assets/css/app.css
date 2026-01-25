@@ -1,0 +1,6 @@
+/* App pages (index.php, admin): same theme as landing, extra layout only */
+.main-content {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    min-height: 100vh;
+}
